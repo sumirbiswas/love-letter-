@@ -131,3 +131,14 @@ body.loaded {
     transform: translateY(-40px) scale(1.4);
   }
 }
+/* Romantic glow */
+.glow {
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 8px rgba(255,255,255,0.4); }
+  50% { text-shadow: 0 0 18px rgba(255,255,255,0.8); }
+  100% { text-shadow: 0 0 8px rgba(255,255,255,0.4); }
+}
