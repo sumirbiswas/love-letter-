@@ -36,3 +36,20 @@ function createPetal() {
 }
 
 setInterval(createPetal, 800);
+// Butterfly (rare & elegant)
+function createButterfly() {
+  const butterfly = document.createElement("div");
+  butterfly.className = "butterfly";
+  butterfly.innerHTML = "🦋";
+
+  butterfly.style.top = 20 + Math.random() * 40 + "%";
+
+  document.body.appendChild(butterfly);
+
+  setTimeout(() => {
+    butterfly.remove();
+  }, 13000);
+}
+
+// One butterfly every 10–15 seconds
+setInterval(createButterfly, 12000);
