@@ -57,3 +57,24 @@ p {
     transform: translateY(0);
   }
 }
+/* Page load fade */
+body {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
