@@ -53,3 +53,18 @@ function createButterfly() {
 
 // One butterfly every 10–15 seconds
 setInterval(createButterfly, 12000);
+// Roses on hover
+document.addEventListener("mouseover", (e) => {
+  if (e.target.tagName === "A" || e.target.tagName === "P" || e.target.tagName === "H1") {
+    const rose = document.createElement("div");
+    rose.className = "rose";
+    rose.innerHTML = "🌹";
+
+    rose.style.left = e.clientX + "px";
+    rose.style.top = e.clientY + "px";
+
+    document.body.appendChild(rose);
+
+    setTimeout(() => rose.remove(), 2000);
+  }
+});
