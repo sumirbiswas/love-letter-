@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #fde2e4, #fadadd);
+  color: #333;
+}
+
+nav {
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #b23a48;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #b23a48;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
