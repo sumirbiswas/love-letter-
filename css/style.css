@@ -93,3 +93,23 @@ body.loaded {
     transform: translateY(110vh) rotate(360deg);
   }
 }
+/* Butterfly */
+.butterfly {
+  position: fixed;
+  top: 20%;
+  font-size: 32px;
+  pointer-events: none;
+  animation: flyAcross 12s linear forwards;
+  opacity: 0.9;
+}
+
+@keyframes flyAcross {
+  from {
+    left: -50px;
+    transform: scale(0.9) rotate(0deg);
+  }
+  to {
+    left: 110%;
+    transform: scale(1.1) rotate(10deg);
+  }
+}
