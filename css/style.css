@@ -113,3 +113,21 @@ body.loaded {
     transform: scale(1.1) rotate(10deg);
   }
 }
+/* Rose hover effect */
+.rose {
+  position: fixed;
+  font-size: 22px;
+  pointer-events: none;
+  animation: roseFloat 2s ease forwards;
+}
+
+@keyframes roseFloat {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-40px) scale(1.4);
+  }
+}
